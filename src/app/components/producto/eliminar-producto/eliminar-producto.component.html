@@ -1,0 +1,32 @@
+<app-menu></app-menu>
+<main class="flex-shrink-0">
+    <section class="py-5">
+        <div class="container px-5">
+            <!-- Contact form-->
+            <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                <div class="text-center mb-5">
+                    <div class="alert alert-success" role="alert" *ngIf="cursoEliminado">
+                        Se elimino el producto correctamente
+                    </div>
+                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3" style="width: 100px;
+                    height: 100px;">
+                        <i class="bi bi-bookmark-x-fill" style="font-size: 90px;"></i>
+                    </div>
+                    <h1 class="fw-bolder">ELIMINAR PRODUCTO</h1>
+                    <p class="lead fw-normal text-muted mb-0">Seleccione el producto que desea eliminar</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+
+                        <select id="disabledSelect" class="form-select form-control"
+                            (change)="recibirIdproducto.value)" #cursos>
+                            <option></option>
+                            <option *ngFor="let item of prductoList" value="{{item._id}}">{{item.nombre}}</option>
+                        </select>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

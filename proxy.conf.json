@@ -1,0 +1,19 @@
+{
+    "/APIFINAL/producto": {
+        "target": "http://localhost:3000",
+        "secure": false,
+        "changeOrigin": false
+        },
+        "/APIFINAL/usuarios/login": {
+            "target": "http://localhost:3000",
+            "secure": false,
+            "changeOrigin": false
+        },
+        "/ApiFinal/usuarios/signup": {
+            "target": "http://localhost:3000",
+            "secure": false,
+            "changeOrigin": false
+        }
+
+    
+}
